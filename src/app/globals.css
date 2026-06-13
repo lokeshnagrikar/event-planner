@@ -1,0 +1,182 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Gen-Z HSL variables (Deep Purple, Neon Pink, Electric Blue) */
+    --background: 251 61% 5%; /* Deep Purple #080415 */
+    --foreground: 210 20% 95%; /* Soft Silver White */
+    
+    --card: 251 50% 8%; /* #0d091e card background */
+    --card-foreground: 210 20% 95%;
+    
+    --popover: 251 61% 6%;
+    --popover-foreground: 210 20% 95%;
+    
+    --primary: 338 100% 65%; /* #FF4D8D - Neon Pink */
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: 224 100% 65%; /* #4C7DFF - Electric Blue */
+    --secondary-foreground: 0 0% 100%;
+    
+    --muted: 251 30% 12%;
+    --muted-foreground: 251 15% 65%;
+    
+    --accent: 251 40% 15%;
+    --accent-foreground: 338 100% 65%;
+    
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    
+    --border: 251 30% 14%; /* Deep purple-charcoal border */
+    --input: 251 30% 14%;
+    --ring: 338 100% 65%; /* Pink neon ring */
+    
+    --radius: 0.75rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  html,
+  body {
+    background-color: #050505; /* Fallback absolute luxury dark */
+    color: hsl(var(--foreground));
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    font-display: swap;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Custom Selection */
+  ::selection {
+    background-color: rgba(197, 160, 89, 0.25); /* Tinted brass */
+    color: #ffffff;
+  }
+
+  /* Custom Scrollbar - Minimal & Elegant */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #050505;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: rgba(197, 160, 89, 0.2);
+    border-radius: 3px;
+    transition: background 0.3s ease;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(197, 160, 89, 0.4);
+  }
+}
+
+/* Lenis Smooth Scrolling Reset */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+/* Gen-Z Cinematic Aesthetics Utilities */
+@layer utilities {
+  /* Premium Glassmorphic container with deep purple tint */
+  .glass-panel {
+    background: rgba(19, 13, 46, 0.5);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+  }
+
+  .glass-panel-hover {
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  
+  .glass-panel-hover:hover {
+    background: rgba(19, 13, 46, 0.7);
+    border-color: rgba(255, 77, 141, 0.3);
+    box-shadow: 0 10px 30px -15px rgba(255, 77, 141, 0.15);
+  }
+
+  /* Neon Glow Classes */
+  .glow-pink-hover {
+    transition: all 0.3s ease;
+  }
+  .glow-pink-hover:hover {
+    box-shadow: 0 0 20px rgba(255, 77, 141, 0.4);
+    border-color: rgba(255, 77, 141, 0.6);
+  }
+
+  .glow-blue-hover {
+    transition: all 0.3s ease;
+  }
+  .glow-blue-hover:hover {
+    box-shadow: 0 0 20px rgba(76, 125, 255, 0.4);
+    border-color: rgba(76, 125, 255, 0.6);
+  }
+
+  /* Text Gradient redirects for seamless theme adaptation */
+  .text-gold-gradient {
+    background: linear-gradient(135deg, #FF4D8D 0%, #D86BFF 50%, #4C7DFF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .text-silver-gradient {
+    background: linear-gradient(135deg, #ffffff 0%, #a29bbd 50%, #685b8a 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .text-neon-pink {
+    background: linear-gradient(to right, #FF4D8D, #ff8dae);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .text-neon-blue {
+    background: linear-gradient(to right, #4C7DFF, #8db0ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Ambient cinematic light sources */
+  .ambient-glow-purple {
+    background: radial-gradient(circle, rgba(18, 11, 45, 0.4) 0%, rgba(8, 4, 21, 0) 70%);
+  }
+
+  .ambient-glow-pink {
+    background: radial-gradient(circle, rgba(255, 77, 141, 0.08) 0%, rgba(8, 4, 21, 0) 70%);
+  }
+
+  .ambient-glow-blue {
+    background: radial-gradient(circle, rgba(76, 125, 255, 0.08) 0%, rgba(8, 4, 21, 0) 70%);
+  }
+}

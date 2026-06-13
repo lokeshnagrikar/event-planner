@@ -1,0 +1,23 @@
+[
+  {
+    "id": "g1",
+    "imageSrc": "https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1200",
+    "category": "Luxury Wedding",
+    "title": "The Golden Canopy",
+    "description": "An grand luxury glass canopy styled with over 10,000 fresh white roses, antique brass chandeliers, and immersive amber accent glows."
+  },
+  {
+    "id": "g2",
+    "imageSrc": "https://images.unsplash.com/photo-1511578314322-379afb476865?q=80&w=1200",
+    "category": "Corporate",
+    "title": "Modern Tech Launch",
+    "description": "Sleek obsidian panels with custom neon light matrices, premium glass panels, and asymmetrical layout seating for VIP stakeholders."
+  },
+  {
+    "id": "g3",
+    "imageSrc": "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?q=80&w=1200",
+    "category": "Engagement",
+    "title": "Emerald Glasshouse",
+    "description": "A customized transparent greenhouse setup lit with emerald green and champagne undertones, featuring hanging botanical ceiling grids."
+  }
+]

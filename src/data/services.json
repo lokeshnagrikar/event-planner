@@ -1,0 +1,52 @@
+[
+  {
+    "title": "Luxury Wedding Experiences",
+    "description": "Monumental stage styling, floating floral grids, ambient neon light accents, and cinematic backdrops tailored for modern premium weddings.",
+    "badge": "Bespoke",
+    "icon": "solar:heart-bold-duotone",
+    "className": "md:col-span-2",
+    "image": "https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=800",
+    "video": "/videos/Video-172.mp4"
+  },
+  {
+    "title": "Creative Celebration Styling",
+    "description": "Aesthetic pastel assemblies, organic geometric grids, and custom illuminated backdrop tunnels for modern luxury birthdays.",
+    "badge": "Trending",
+    "icon": "solar:gift-bold-duotone",
+    "className": "md:col-span-1",
+    "video": "/videos/Video-12.mp4"
+  },
+  {
+    "title": "Grand Entrance Effects",
+    "description": "Spectacular cold pyrotechnic sparkler walls and timed flame matrices synchronized to key cinematic moments.",
+    "badge": "Special FX",
+    "icon": "solar:fire-bold-duotone",
+    "className": "md:col-span-1",
+    "video": "/videos/Video-12.mp4"
+  },
+  {
+    "title": "Cinematic Event Entrances",
+    "description": "Heavy dry ice fog carpets, customized neon path tunnels, and theatrical spot-lighting for celebrity-tier entries.",
+    "badge": "Immersive",
+    "icon": "solar:magic-stick-bold-duotone",
+    "className": "md:col-span-1",
+    "video": "/videos/Video-12.mp4"
+  },
+  {
+    "title": "Celebration Impact Moments",
+    "description": "Slow-motion metallic confetti drops, airburst blasters, and custom glitter cannons for climax moments.",
+    "badge": "Impact",
+    "icon": "solar:stars-bold-duotone",
+    "className": "md:col-span-1",
+    "video": "/videos/Video-276.mp4"
+  },
+  {
+    "title": "Elite Corporate Productions",
+    "description": "High-tech stage setups, obsidian media panels, premium lounge coordinates, and minimalist layouts for global brands.",
+    "badge": "Vanguard",
+    "icon": "solar:case-minimalistic-bold-duotone",
+    "className": "md:col-span-2",
+    "image": "https://images.unsplash.com/photo-1511578314322-379afb476865?q=80&w=800",
+    "video": "/videos/Video-276.mp4"
+  }
+]
