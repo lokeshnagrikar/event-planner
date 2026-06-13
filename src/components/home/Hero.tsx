@@ -40,7 +40,7 @@ export default function Hero() {
         >
           {/* Local luxury video asset */}
           <source
-            src="/videos/Vdo1.mp4"
+            src="/videos/vdo1.mp4"
             type="video/mp4"
           />
         </video>
