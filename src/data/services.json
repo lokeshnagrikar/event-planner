@@ -6,7 +6,7 @@
     "icon": "solar:heart-bold-duotone",
     "className": "md:col-span-2",
     "image": "https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=800",
-    "video": "/videos/Video-172.mp4"
+    "video": "/videos/vdo2.mp4"
   },
   {
     "title": "Creative Celebration Styling",
@@ -14,7 +14,8 @@
     "badge": "Trending",
     "icon": "solar:gift-bold-duotone",
     "className": "md:col-span-1",
-    "video": "/videos/Video-12.mp4"
+    "image": "https://images.unsplash.com/photo-1527529482837-4698179dc6ce?q=80&w=800",
+    "video": "/videos/vdo1.mp4"
   },
   {
     "title": "Grand Entrance Effects",
@@ -22,7 +23,8 @@
     "badge": "Special FX",
     "icon": "solar:fire-bold-duotone",
     "className": "md:col-span-1",
-    "video": "/videos/Video-12.mp4"
+    "image": "https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?q=80&w=800",
+    "video": "/videos/Vdo3.mp4"
   },
   {
     "title": "Cinematic Event Entrances",
@@ -30,7 +32,8 @@
     "badge": "Immersive",
     "icon": "solar:magic-stick-bold-duotone",
     "className": "md:col-span-1",
-    "video": "/videos/Video-12.mp4"
+    "image": "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?q=80&w=800",
+    "video": "/videos/vdo1.mp4"
   },
   {
     "title": "Celebration Impact Moments",
@@ -38,7 +41,8 @@
     "badge": "Impact",
     "icon": "solar:stars-bold-duotone",
     "className": "md:col-span-1",
-    "video": "/videos/Video-276.mp4"
+    "image": "https://images.unsplash.com/photo-1478146059778-26028b07395a?q=80&w=800",
+    "video": "/videos/vdo2.mp4"
   },
   {
     "title": "Elite Corporate Productions",
@@ -47,6 +51,6 @@
     "icon": "solar:case-minimalistic-bold-duotone",
     "className": "md:col-span-2",
     "image": "https://images.unsplash.com/photo-1511578314322-379afb476865?q=80&w=800",
-    "video": "/videos/Video-276.mp4"
+    "video": "/videos/Vdo3.mp4"
   }
 ]

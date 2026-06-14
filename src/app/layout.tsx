@@ -48,6 +48,19 @@ export const metadata: Metadata = {
     "Cinematic Wedding Decorators",
   ],
   authors: [{ name: "ST Events Team" }],
+  icons: {
+    icon: "/favicon.png",
+    shortcut: "/favicon.png",
+    apple: "/favicon.png",
+  },
+  openGraph: {
+    title: "ST Events | Luxury Event Management & Decoration Gondia",
+    description:
+      "ST Events orchestrates high-end cinematic weddings, engagements, corporate events, and bespoke birthday decorations in Gondia, Maharashtra.",
+    type: "website",
+    locale: "en_IN",
+    siteName: "ST Events",
+  },
 };
 
 export const viewport = {
