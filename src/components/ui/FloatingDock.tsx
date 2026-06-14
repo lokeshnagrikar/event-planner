@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence, useMotionValue, useSpring, useTransform, MotionValue } from "framer-motion";
 import Link from "next/link";
 import { Icon } from "@iconify/react";
@@ -21,7 +21,16 @@ const DEFAULT_ITEMS: DockItem[] = [
 ];
 
 export default function FloatingDock({ items = DEFAULT_ITEMS }: { items?: DockItem[] }) {
+  const [mounted, setMounted] = useState(false);
   const mouseX = useMotionValue(Infinity);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return null;
+  }
 
   return (
     <div className="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 pointer-events-auto">
@@ -110,7 +119,7 @@ function DockIcon({
       {/* Vector Icon */}
       <motion.div 
         style={{ width: iconSize, height: iconSize }} 
-        className="flex items-center justify-center animate-none"
+        className="flex items-center justify-center"
       >
         <Icon icon={icon} className="w-full h-full" />
       </motion.div>

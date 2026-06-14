@@ -5,6 +5,7 @@ import Providers from "@/components/common/Providers";
 import Header from "@/components/common/Header";
 import Footer from "@/components/common/Footer";
 import FloatingDock from "@/components/ui/FloatingDock";
+import DevBadge from "@/components/ui/DevBadge";
 import ClickParticles from "@/components/animations/ClickParticles";
 import BookingModal from "@/components/common/BookingModal";
 import FloatingParticles from "@/components/animations/FloatingParticles";
@@ -119,6 +120,9 @@ export default function RootLayout({
 
             {/* macOS Floating Dock */}
             <FloatingDock />
+
+            {/* Floating Developer Badge */}
+            <DevBadge />
 
             {/* Global Footer */}
             <Footer />

@@ -11,6 +11,14 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
   const { setBookingOpen } = useEventStore();
 
+  React.useEffect(() => {
+    console.log(
+      "%c✦ DESIGNED & DEVELOPED BY LOKESH NAGRIKAR ✦%c\nFreelance Event Website Designer & Developer", 
+      "color: #FF4D8D; font-size: 13px; font-weight: bold; background: #0c0822; padding: 6px 12px; border-radius: 6px; border: 1px solid rgba(255, 77, 141, 0.2);",
+      "color: #a3a3a3; font-size: 10px; display: block; margin-top: 4px;"
+    );
+  }, []);
+
   // Marquee text items
   const marqueeItems = [
     "Let's Create Something Extraordinary",
@@ -166,7 +174,10 @@ export default function Footer() {
 
         {/* Footer Sub-bar */}
         <div className="flex flex-col sm:flex-row justify-between items-center pt-8 border-t border-white/[0.04] text-[10px] tracking-[0.1em] text-luxury-silver/60">
-          <p>© {currentYear} ST EVENTS. All rights reserved. Crafted with passion in Gondia.</p>
+          <p>
+            © {currentYear} ST EVENTS. All rights reserved. Crafted in Gondia. Designed & Developed by{" "}
+            <span className="font-semibold text-white hover:text-primary transition-colors cursor-default">Lokesh Nagrikar</span>
+          </p>
           <div className="flex space-x-6 mt-4 sm:mt-0 font-light">
             <Link href="#" className="hover:text-white transition-colors">Privacy Policy</Link>
             <Link href="#" className="hover:text-white transition-colors">Terms & Conditions</Link>
