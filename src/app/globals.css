@@ -103,6 +103,15 @@ html.lenis body {
 
 /* Gen-Z Cinematic Aesthetics Utilities */
 @layer utilities {
+  /* Hide scrollbars but keep functionality */
+  .scrollbar-none::-webkit-scrollbar {
+    display: none !important;
+  }
+  .scrollbar-none {
+    -ms-overflow-style: none !important;
+    scrollbar-width: none !important;
+  }
+
   /* Premium Glassmorphic container with deep purple tint */
   .glass-panel {
     background: rgba(19, 13, 46, 0.5);

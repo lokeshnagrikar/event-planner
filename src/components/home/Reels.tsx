@@ -152,14 +152,15 @@ export default function Reels() {
           </p>
         </div>
 
-        {/* Reels Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        {/* Reels Grid / Mobile Slider */}
+        <div className="flex md:grid overflow-x-auto md:overflow-x-visible gap-6 snap-x snap-mandatory pb-6 md:pb-0 scrollbar-none md:grid-cols-3 -mx-4 px-4 md:-mx-0 md:px-0">
           {REELS_DATA.map((reel, idx) => (
             <AnimateIn
               key={idx}
               direction="up"
               delay={idx * 0.1}
               duration={1.0}
+              className="w-[82vw] sm:w-[50vw] md:w-full shrink-0 snap-center"
             >
               <ReelCard
                 reel={reel}
